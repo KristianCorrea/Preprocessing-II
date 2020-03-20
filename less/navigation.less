@@ -1,1 +1,35 @@
 // Navigation Styles here
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 4% 0;
+    @media @mobile{
+        padding: 1% 0;
+    }
+    h1{
+        width: 60%;
+        @media @mobile{
+            text-align: center;
+            width: 100%;
+        }
+    }
+    ul{
+        align-items: center;
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        @media @mobile{
+            width: 100%;
+        }
+        li{
+            font-size: 1.6rem;
+            &:hover{
+                color: red;
+            }
+        }
+    }
+}
+#navDivider{
+    border-top: dashed 0.2rem grey;
+}

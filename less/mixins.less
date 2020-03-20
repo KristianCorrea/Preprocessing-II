@@ -1,1 +1,14 @@
 // Mixins in here
+.signupButton(@radius: 10px, @bg-color: rgb(35, 128, 145), @textcolor: White){
+    border-radius: @radius;
+    color: @textcolor;
+    background-color: @bg-color;
+    padding: 5% 5%;
+    width: 85%;
+    text-align: center;
+    font-size: 2rem;
+    @media @mobile{
+        padding: 3% 5%;
+        width: 100%;
+    }
+}
